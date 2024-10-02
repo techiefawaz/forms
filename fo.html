@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="drluxury" />
+    <meta name="description" content="contact" />
+    <title>drluxury</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <style>
+      
+    *{
+      color: aliceblue;
+      box-sizing: border-box;
+      font-size: 15px;
+     
+      
+      /* padding: 0;
+      margin: 0; */
+    }
+    h1{
+      padding: 15px;
+      font-size: 33px;
+    }
+    body{ 
+
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   
+    }
+    .icon{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .leftside{
+      height: 25%;
+      background: linear-gradient(to bottom, #4fa1d8, #090b15);
+      margin-top: 0;
+      margin-left: 9rem;
+      padding: 4rem 2rem 8rem 2rem;
+      border-radius: 1.5em;
+      font-size: 13px;
+    }
+    .main{
+      display:  flex;
+      justify-content: space-around;
+      
+    }
+    .header{
+      display: flex;
+      justify-content: space-around;
+    }
+    .header__ul{
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+    }
+    li{
+      padding: 10px;
+    }
+    a{
+      text-decoration: none;
+    }
+
+  .contact__textarea{
+    width: 20rem;
+    height: 15em;
+    border-radius: 10%;
+  
+  }
+  .contact__input{
+    background-color:rgba(151, 147, 147, 0.179);;
+    width: 75%;
+    height: 45px;
+    border-radius: 10px;
+  }
+  .contact__textarea{
+    background-color: rgba(151, 147, 147, 0.179);
+    width: 70%;
+    height: 210px;
+    text-align: center;
+  }
+  .contact__label1{
+    margin-right: 6rem;
+  }
+  .contact__button{
+    background: linear-gradient(to bottom, #4fa1d8, #04050a);
+    border-radius: 10px;
+    height: 50px;
+    width: 20%;
+    
+  }
+  .separate{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            color: black;
+        }
+        button {
+            background-color: #28a745;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+  </style>
+  <body>
+    <header>
+        <p>AL-IMARA ACADEMY</p>
+    </header>
+   
+   
+        <form
+          action="https://formspree.io/f/xzzpnwvw"
+          method="POST"
+          class="contact__form">
+        <div class="separate">
+            <p class="contact__p" >
+              <label class="contact__label1" for="name">First Name:&nbsp</label>
+              <input
+                class="contact__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p class="contact__p" >
+              <label class="contact__label1" for="l_name">Last Name:&nbsp</label>
+              <input
+                class="contact__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+          </div>
+            <p class="contact__p">
+              <label class="contact__label" for="email">Email:&nbsp</label>
+              <br>
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="tel">Tel:&nbsp&nbsp&nbsp</label>
+              <br>
+              <input type="number" name="number" id="number" placeholder="your number" autocomplete="on" class="contact__input">
+            </p>
+        <label for="town">Town:</label>
+        <input type="text" id="town" name="town" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="arabic_level">Level of Speaking Arabic:</label>
+        <select id="arabic_level" name="arabic_level" required>
+            <option value="good">Good</option>
+            <option value="v_good">Very Good</option>
+            <option value="excellent">Excellent</option>
+        </select>
+
+        <label for="attended_madrasah">Have you attended any online madrasah before?</label>
+        <select id="attended_madrasah" name="attended_madrasah" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="rules">Will you abide by the rules and regulations?</label>
+        <select id="rules" name="rules" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="signature">Signature:</label>
+     
+          <button class="contact__button" type="submit">Send</button>
+          <button class="contact__button" type="reset">Reset</button>
+        </form> 
+    
+
+
+   
+  </body>
+</html>
